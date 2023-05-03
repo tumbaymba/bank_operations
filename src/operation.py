@@ -29,6 +29,12 @@ class Operation:
         '''
         return self.state
 
+    def get_date(self):
+        '''
+        :return: дату проведения операции
+        '''
+        return self.date
+
     def print_information(self):
         '''
         Выводит информацию о переводе
@@ -37,3 +43,6 @@ class Operation:
         print(f"{self.date} {self.description}\n"
               f"{self.from_} -> {self.to}\n"
               f"{self.amount} {self.currency}\n")
+
+    def __repr__(self):
+        return f"операция {self.id}"
