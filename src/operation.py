@@ -42,7 +42,7 @@ class Operation:
         '''
         return (f"{self.date} {self.description}\n"
                f"{self.from_} -> {self.to}\n"
-               f"{self.amount} {self.currency}\n"
+               f"{self.amount} {self.currency}\n\n"
                 )
 
     def __repr__(self):
