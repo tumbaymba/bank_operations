@@ -3,9 +3,6 @@ import datetime
 
 from src.operation import Operation
 
-FILE_URL = "../json_files/operations.json"
-
-
 def load_file(file_url):
     '''
     Функция получает расположение JSON-файла
