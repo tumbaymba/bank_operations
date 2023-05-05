@@ -35,14 +35,15 @@ class Operation:
         '''
         return self.date
 
-    def print_information(self):
+    def get_information(self):
         '''
         Выводит информацию о переводе
         в понятном виде
         '''
-        print(f"{self.date} {self.description}\n"
-              f"{self.from_} -> {self.to}\n"
-              f"{self.amount} {self.currency}\n")
+        return (f"{self.date} {self.description}\n"
+               f"{self.from_} -> {self.to}\n"
+               f"{self.amount} {self.currency}\n"
+                )
 
     def __repr__(self):
         return f"операция {self.id}"
