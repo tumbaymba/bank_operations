@@ -1,14 +1,11 @@
 class Operation:
     '''
-    Класс создаёт экземпляр банковской операции,
+    Создаёт экземпляр банковской операции,
     который содержит в себе всю информацию
     '''
 
-    def __init__(
-            self, id, state, date, description,
-            from_, to, amount, currency
-    ):
-        self.id = id
+    def __init__(self, _id, state, date, description, from_, to, amount, currency):
+        self._id = _id
         self.state = state
         self.date = date
         self.description = description
@@ -19,26 +16,26 @@ class Operation:
 
     def get_id(self):
         '''
-        :return: id операции
+        возвращает id операции
         '''
-        return self.id
+        return self._id
 
     def get_state(self):
         '''
-        :return: статус перевода
+        возвращает статус перевода
         '''
         return self.state
 
     def get_date(self):
         '''
-        :return: дату проведения операции
+        возвращает дату проведения операции
         '''
         return self.date
 
     def get_information(self):
         '''
         Выводит информацию о переводе
-        в понятном виде
+        в читабельном виде
         '''
         return (f"{self.date} {self.description}\n"
                f"{self.from_} -> {self.to}\n"
@@ -46,4 +43,4 @@ class Operation:
                 )
 
     def __repr__(self):
-        return f"операция {self.id}"
+        return f"операция {self._id}"

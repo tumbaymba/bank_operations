@@ -1,8 +1,8 @@
 import src.operation
 from src.utils import *
 
-FILE_URL_GENERAL = "C:/forpy/bank/json_files/operations.json"
-FILE_URL_TEST = "C:/forpy/bank/json_files/test.json"
+FILE_URL_GENERAL = "C:/Users/tumba/PycharmProjects/bank_operations/json_files/operations.json"
+FILE_URL_TEST = "C:/Users/tumba/PycharmProjects/bank_operations/json_files/operations.json"
 
 
 def test_load_file():

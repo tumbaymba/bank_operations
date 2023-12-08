@@ -5,31 +5,26 @@ from src.operation import Operation
 
 def load_file(file_url):
     '''
-    Функция получает расположение JSON-файла
+    Получает расположение JSON-файла
     с банковскими операциями и
-    преобразует его в python-словарь
-    :param file_url: расположение JSON-файла
-    :return: словарь с банковскими операциями
+    преобразует его в словарь
     '''
-    with open(file_url, "r", encoding="UTF-8") as j_file:
-        operations = json.load(j_file)
+    with open(file_url, "r", encoding="UTF-8") as f:
+        operations = json.load(f)
         return operations
 
 
 def make_operations(operations: list):
     '''
-    Функция создаёт список экземпляров класса Operations,
+    Создаёт список экземпляров класса Operations,
     который включает в себя всю информацию о банковской операции
-    :param operations: список с банковскими операциями
     '''
     operations_list = []
 
     def check_wallet(where: str):
         '''
-        Функция шифрует данные кошелька, в зависимости от его типа:
+        Шифрует данные кошелька, в зависимости от его типа:
         Счет или Карта
-        :param where: указатель положение кошелька в счете (получатель:to или отправитель:from)
-        :return: зашифрованный кошелек
         '''
         wallet = "Неизвестно"
         try:

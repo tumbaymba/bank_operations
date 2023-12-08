@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "bank"
+name = "bank_operations"
 version = "0.1.0"
 description = "The feature that show last 5 executed operations"
-authors = ["Dmitry <dima.captan@yandex.ru>"]
+authors = ["Dmitry <tumbaymbajamalumba@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 
 
 [tool.poetry.group.dev.dependencies]
