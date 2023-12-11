@@ -57,7 +57,7 @@ def make_operations(operations: list):
 
 def get_all_operations(operations: list):
     '''
-    Функция выводит все сортированные по дате операции
+    Выводит все сортированные по дате операции
     :param operations: список экземпляров класса Operations
     :return: данные со всеми отсортированными операциями
     '''
@@ -70,7 +70,7 @@ def get_all_operations(operations: list):
 
 def get_executed_five(operations: list):
     '''
-    Функция выводит последние 5 выполенных операций
+    Выводит последние 5 выполенных операций
     :param operations: список экземпляров класса Operations
     :return: данные с пятью последними успешными операциями
     '''
